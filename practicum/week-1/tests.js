@@ -6,6 +6,6 @@ window.onload = () => {
     let username = hostname.split('.')[0];
     console.log(username);
     let iframe = document.getElementById('myApplicationFrame');
-    iframe.setAttribute('src', `https://${username}.github.io/mygiftsearch/index.html`);
+    iframe.setAttribute('src', `https://${username}.github.io/mygiftsearch/`);
 }
 

@@ -8,7 +8,7 @@ output: [1, 0, 1, 2]
 */
 
 var biggerAndEven = function (input) {
-  retVal;
+  retVal = [];
   for (i = 0; i < input.length; i++) {
     curr = 0;
     for (j = 0; j < input.length; j++) {

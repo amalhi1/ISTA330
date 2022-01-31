@@ -10,6 +10,12 @@ The letters in A are guaranteed distinct, and all characters in A and B are lett
  output: 3
 */
 
-var howManyCommon = function(A, B) {
-
+var howManyCommon = function (A, B) {
+  retVal = 0;
+  for (i = 0; i < B.length; i++) {
+    if (A.includes(B[i])) {
+      retVal += 1;
+    }
+  }
+  return retVal;
 };

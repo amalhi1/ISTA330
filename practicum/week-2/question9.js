@@ -8,6 +8,12 @@ output: 'hello'
 
 */
 
-var suffleString = function(input, shuffleIndices) {
-
+var suffleString = function (input, shuffleIndices) {
+  for (i = 0; i < input.length; i++) {
+    retVal += "|";
+  }
+  for (i = 0; i < shuffleIndices.length; i++) {
+    retVal[i] = input[shuffleIndices[i]];
+  }
+  return retVal;
 };

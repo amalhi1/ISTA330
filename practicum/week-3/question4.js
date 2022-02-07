@@ -12,6 +12,13 @@ Example:
  output: true
 */
 
-var hasDuplicates = function(input) {
-
+var hasDuplicates = function (input) {
+  for (i = 0; i < input.length; i++) {
+    for (j = i + 1; j < input.length; j++) {
+      if (input[i] === input[j]) {
+        return true;
+      }
+    }
+  }
+  return false;
 };

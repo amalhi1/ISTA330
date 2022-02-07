@@ -9,6 +9,14 @@ is at least twice as much as every other number
          output: true
 */
 
-var largestNumberIsAtLeastTwice = function(input) {
-   
+var largestNumberIsAtLeastTwice = function (input) {
+  input.sort();
+  retVal = true;
+  var maxVal = input[input.length - 1];
+  for (i = 0; i < input.length - 1; i++) {
+    if (input[i] * 2 > maxVal) {
+      retVal = false;
+    }
+  }
+  return retVal;
 };

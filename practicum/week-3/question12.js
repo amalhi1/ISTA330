@@ -9,5 +9,13 @@ Given n, calculate F(n).
 */
 
 var F = function(n) {
-
+    retVal = 1;
+    num1 = 0;
+    num2 = 1;
+    for (var i = 0; i < n-1; i++) {
+        retVal = num1 + num2;
+        num1 = num2;
+        num2 = retVal;
+    }
+    return retVal
 };
